@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 109px;
+  width: 100%;
+  background-color: rgb(24, 121, 218);
+  padding: 28px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+header nav a:hover {
+  color: blueviolet;
+  transition: 2s;
+}
+
+.aboutME {
+  flex-direction: row;
+  height: 318px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(105, 225, 255);
+}
+
+.aboutME img {
+  width: 247px;
+  height: 247px;
+  border-radius: 50%;
+}
+
+.aboutMe__descricao{
+    width: 500px;
+    gap: 10px;
+    h4{
+        font-size: 20px;
+    }
+    p{
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+.top{
+    height: 289px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(105, 225, 255);
+}
+
+.hobbies {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.jogos {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.top__Hobbies {
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.top__Jogos {
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 102px;
+    height: 150px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#hobbies1 {
+    background-image: url(img/praia.webp);
+}
+#hobbies2 {
+    background-image: url(img/videogame.webp);
+}
+
+#hobbies3 {
+    background-image: url(img/basquete.webp);
+}
+
+#hobbies4 {
+    background-image: url(img/greek.webp);
+}
+
+#hobbies5 {
+    background-image: url(img/conversa.webp);
+}
+
+#jogos1 {
+    background-image: url(img/reddead.webp);
+}
+
+#jogos2 {
+    background-image: url(img/lastofus.webp);
+}
+
+#jogos3 {
+    background-image: url(img/mario.webp);
+}
+
+#jogos4 {
+    background-image: url(img/hollow.webp);
+}
+
+#jogos5 {
+    background-image: url(img/hades.webp);
+}
+
+.feedback {
+    display:flex;
+    background-color: rgb(105, 225, 255);
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+}
+
+.feedback__box{
+    width: 80%;
+}
+
+.feedback__Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.feedback__Form input {
+    width: 80%;
+}
+
+.feedback__Form button {
+    margin-left: 85%;
+    margin-top: 1.5%;
+}
+
+footer {
+    height: 50px;
+    background-color: rgb(24, 121, 218);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+}
+
+.web{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid white;
+    background-color: black;
+    margin-bottom: 0.5%
+}
+
+footer a:hover {
+    color:blueviolet;
+    transition: 2s;
+}
+
+@media (min-width:430px){
+    .aboutME {
+        flex-direction: column;
+        height: 584px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgb(105, 225, 255);
+    }
+
+    .aboutME img {
+        width: 247px;
+        height: 247px;
+        border-radius: 50%;
+    }
+
+    .aboutMe__descricao{
+        width: 100%;
+        height: 242.5;
+        
+        h4{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .top{
+            height: 890px;
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(105, 225, 255);
+            flex-wrap: wrap;
+            align-content: center;
+    }
+
+    .hobbies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .top__Hobbies {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .jogos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top__Jogos {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feedback__box{
+        width: 90%;
+    }
+
+    .feedback__Form button {
+        margin-left: 35%;
+        margin-top: 1.5%;
+    }
+    footer {
+        height: 127px; 
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .web{
+        font-size: 25px
+    }
+}
