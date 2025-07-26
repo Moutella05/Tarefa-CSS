@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 header {
@@ -17,6 +18,14 @@ header {
 
 header h1 {
   font-size: 40px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu ul{
+    list-style: none;
 }
 
 header nav a {
@@ -243,6 +252,65 @@ footer a:hover {
 }
 
 @media (max-width:450px){
+    .menu-hamburguer {
+        display: flex;
+        flex-direction: row-reverse;
+        top: 40px;
+        right: 40px;
+        z-index: 4;
+    }
+
+    .menu-icon{
+        width: 35px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 5;
+        cursor: pointer
+        
+    }
+
+    .menu {
+        position: absolute;
+        background: gray;
+        top: 8vw;
+    }
+
+    .menu ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .menu ul li {
+        margin: 30px 0;
+    }
+
+    .menu a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        background: gray;
+        transform: scale(0);
+        transition: 0.5s;
+        z-index: -1;
+    }
+
+    .linha {
+        height: 4px;
+        background-color:blueviolet
+    }
+
+    .overlay {
+        transform: scale(0);
+        transition: 0.5s;
+        margin-top: 1rem;
+    }
+
+    #menu-toggle:checked ~ .overlay {
+        transform: scale(1);
+    }
+
     .aboutME {
         flex-direction: column;
         height: 584px;

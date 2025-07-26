@@ -16,9 +16,23 @@
 <body>
     <header>
         <h1>João Vitor Moutella</h1>
-        <nav>
-            <a href="index.html">Página Inicial</a>
-        </nav>
+        <div class="menu-hamburguer">
+            <input type="checkbox" id="menu-toggle"/>
+            <label for="menu-toggle" class="menu-icon">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </label>
+            <div class="overlay">
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#">Página Inicial</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
     </header>
     <main>
         <section class="aboutME">
